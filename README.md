@@ -21,4 +21,8 @@ Key things:
 4. apple's prepare script runs `apple/index.js`
 5. `apple/index.js` requires `banana/index.js`, checks for `INSTALLED`, then prints 'apple'
 
-The problem is that when apple's `prepare` script runs, banana's `prepare` script is still sleeping so apple's `prepare` script errors.
+The problem is that when:
+
+1. apple's `prepare` script runs
+2. banana's `prepare` script is still sleeping so 
+3. apple's `prepare` script errors because banana's `INSTALLED` file hasn't been created yet.
