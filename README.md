@@ -13,7 +13,7 @@ npm install # works on second run
 npm run clean
 ```
 
-Key things:
+Key Things:
 
 1. apple depends on banana
 2. banana's `prepare` script sleeps for 2s, touches `INSTALLED` file, then runs `banana/index.js`
@@ -23,6 +23,6 @@ Key things:
 
 The problem is that when:
 
-1. apple's `prepare` script runs
-2. banana's `prepare` script is still sleeping so 
-3. apple's `prepare` script errors because banana's `INSTALLED` file hasn't been created yet.
+* apple's `prepare` script runs
+* banana's `prepare` script is still sleeping so 
+* apple's `prepare` script errors because banana's `INSTALLED` file hasn't been created yet.
