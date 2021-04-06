@@ -1,0 +1,10 @@
+{
+  "name": "npm7-prepare-issue",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf node_modules; rm package-lock.json; ls packages | xargs -I % bash -c 'cd packages/% && pwd && rm -f INSTALLED';"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

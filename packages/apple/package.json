@@ -1,0 +1,11 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "sleep 1; touch INSTALLED && node ./index.js"
+  },
+  "dependencies": {
+    "banana": "1.0.0",
+    "durian": "1.0.0"
+  }
+}

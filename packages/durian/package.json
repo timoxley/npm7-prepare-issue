@@ -1,0 +1,9 @@
+{
+  "name": "durian",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "sleep 2; touch INSTALLED; node index.js"
+  },
+  "dependencies": {
+  }
+}
