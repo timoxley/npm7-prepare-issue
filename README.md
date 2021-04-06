@@ -26,3 +26,5 @@ The problem is that when:
 * apple's `prepare` script runs
 * banana's `prepare` script is still sleeping so 
 * apple's `prepare` script errors because banana's `INSTALLED` file hasn't been created yet.
+
+Note: Using `prepublish` instead of `prepare` seems to work fine.
